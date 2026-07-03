@@ -35,7 +35,7 @@ export const CERTIFICATIONS = [
     name: "FIEO",
     fullName: "Federation of Indian Export Organisations",
     description: "Apex body of Indian export promotion organizations set up by Ministry of Commerce",
-    logo: "/images/certifications/fieo.jpg",
+    logo: "/images/certifications/fieo.png",
     downloadLink: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1782664482/FIEO_Registration-cum_Membership_Certificate_djbli6.pdf",
   },
 ];
