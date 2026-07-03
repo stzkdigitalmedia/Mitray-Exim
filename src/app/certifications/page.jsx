@@ -77,17 +77,17 @@ export default function CertificationsPage() {
                            <div className={clsx('grid', 'grid-cols-1', 'sm:grid-cols-2', 'gap-2', 'sm:gap-3', 'md:gap-4', 'lg:gap-6')}>
                               {CERTIFICATIONS.map((cert, i) => (
                                  <div key={i} className={clsx('flex', 'items-start', 'gap-2', 'sm:gap-3', 'md:gap-4', 'p-2', 'sm:p-3', 'md:p-4', 'lg:p-6', 'bg-slate-50', 'border', 'border-slate-100', 'group', 'hover:border-brand-gold', 'transition-all')}>
-                                    <div className={clsx('w-12', 'sm:w-14', 'md:w-16', 'lg:w-20', 'h-12', 'sm:h-14', 'md:h-16', 'lg:h-20', 'bg-white', 'border', 'border-slate-100', 'flex', 'items-center', 'justify-center', 'p-1', 'group-hover:scale-110', 'transition-transform', 'flex-shrink-0')}>
+                                    <div className={clsx('w-16', 'sm:w-20', 'md:w-24', 'lg:w-28', 'h-16', 'sm:h-20', 'md:h-24', 'lg:h-28', 'bg-white', 'border', 'border-slate-100', 'rounded-full', 'flex', 'items-center', 'justify-center', 'group-hover:scale-110', 'transition-transform', 'flex-shrink-0', 'overflow-hidden')}>
                                        <img loading="lazy" decoding="async"
                                           src={cert.logo}
                                           alt={cert.name}
-                                          className={clsx('max-w-full', 'max-h-full', 'object-contain', 'transition-all')}
+                                          className={clsx('w-full', 'h-full', 'object-contain', 'transition-all')}
                                           onError={(e) => {
                                              e.target.style.display = 'none';
                                              e.target.nextSibling.style.display = 'flex';
                                           }}
                                        />
-                                       <FiShield className={clsx('hidden', 'text-brand-gold', 'text-sm', 'sm:text-base', 'md:text-lg', 'lg:text-xl')} />
+                                       <FiShield className={clsx('hidden', 'text-brand-gold', 'text-xl', 'sm:text-2xl', 'md:text-3xl', 'lg:text-4xl')} />
                                     </div>
                                     <div className={clsx('min-w-0', 'flex', 'flex-col', 'justify-center', 'flex-1', 'self-center')}>
                                        <h4 className={clsx('text-[9px]', 'sm:text-[10px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-0.5', 'sm:mb-1')}>{cert.name} Certification</h4>

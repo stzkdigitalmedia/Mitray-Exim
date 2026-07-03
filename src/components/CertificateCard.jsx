@@ -32,14 +32,14 @@ export function CertificateCard({ cert }) {
         <div className="relative h-full bg-white border-2 border-slate-200 transition-all duration-500 group-hover:border-brand-gold group-hover:-translate-x-1 sm:group-hover:-translate-x-2 group-hover:-translate-y-1 sm:group-hover:-translate-y-2 flex flex-col overflow-hidden">
           
           {/* LOGO CONTAINER */}
-          <div className="relative bg-gradient-to-br from-slate-50 to-slate-100 p-3 sm:p-4 md:p-6 h-32 sm:h-40 md:h-52 lg:h-64 flex items-center justify-center border-b-2 border-slate-200 group-hover:bg-white transition-all duration-500">
+          <div className="relative bg-gradient-to-br from-slate-50 to-slate-100 h-32 sm:h-40 md:h-52 lg:h-64 flex items-center justify-center border-b-2 border-slate-200 group-hover:bg-white transition-all duration-500 overflow-hidden">
              {/* CORNER ACCENT */}
              <div className="absolute top-0 right-0 w-6 sm:w-8 md:w-10 lg:w-12 h-6 sm:h-8 md:h-10 lg:h-12 border-t-2 sm:border-t-3 md:border-t-4 border-r-2 sm:border-r-3 md:border-r-4 border-slate-200 group-hover:border-brand-gold transition-colors duration-500"></div>
              
              <img loading="lazy" decoding="async"
                src={cert.logo}
                alt={cert.fullName}
-               className="max-w-[80%] max-h-[80%] object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-sm"
+               className="w-full h-full object-contain p-3 sm:p-4 transition-all duration-700 group-hover:scale-105 drop-shadow-sm"
                onError={(e) => {
                  e.target.style.display = 'none';
                  e.target.nextSibling.style.display = 'flex';
@@ -50,6 +50,7 @@ export function CertificateCard({ cert }) {
                <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-black text-brand-navy uppercase tracking-tight">{cert.name}</p>
              </div>
           </div>
+
 
           {/* CONTENT HUB */}
           <div className="p-3 sm:p-4 md:p-6 lg:p-8 flex-grow flex flex-col justify-between">
