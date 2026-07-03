@@ -200,7 +200,7 @@ export default function ContactPage() {
                               label: "Chat on WhatsApp",
                               val: "+91 8878963333",
                               icon: <FiMessageCircle className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
-                              link: "https://wa.me/qr/2BFZ6ZDAMN2BC1",
+                              link: "https://wa.me/qr/FDGPNCKQQGMCL1",
                               color: "from-emerald-500 to-emerald-600",
                               bgColor: "bg-emerald-50 group-hover:bg-emerald-100"
                            },

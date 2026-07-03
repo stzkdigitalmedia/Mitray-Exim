@@ -33,9 +33,9 @@ export const metadata = {
     site: "@mitrayexim",
   },
   icons: {
-    icon: '/mitrayTab.png',
-    shortcut: '/mitrayTab.png',
-    apple: '/mitrayTab.png',
+    icon: '/newLogo.png',
+    shortcut: '/newLogo.png',
+    apple: '/newLogo.png',
   },
 };
 
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "MITRAY EXIM",
               url: "https://www.mitrayexim.com",
-              logo: "https://www.mitrayexim.com/logo.png",
+              logo: "https://www.mitrayexim.com/newLogo.png",
               contactPoint: [
                 {
                   "@type": "ContactPoint",
