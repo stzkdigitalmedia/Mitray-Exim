@@ -24,7 +24,7 @@ export function Hero() {
         <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-navy/95', 'via-brand-navy/70', 'to-transparent')}></div>
         
         {/* DATA SCANNER SWEEP */}
-        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-transparent', 'via-brand-gold/5', 'to-transparent', '-skew-x-12', 'translate-x-[-200%]', 'animate-[scan_8s_infinite]', 'pointer-events-none')}></div>
+        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-transparent', 'via-brand-gold/5', 'to-transparent', '-skew-x-12', 'translate-x-[-200%]', 'pointer-events-none')}></div>
       </div>
 
       <div className={clsx('w-full', 'max-w-[1920px]', 'mx-auto', 'px-4', 'sm:px-6', 'md:px-8', 'lg:px-10', 'xl:px-12', 'relative', 'z-10')}>

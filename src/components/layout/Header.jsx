@@ -32,7 +32,7 @@ export function Header() {
     <header className={clsx('fixed', 'top-0', 'left-0', 'right-0', 'z-[100]', 'transition-all', 'duration-500')}>
       {/* SLIM INSTITUTIONAL ANNOUNCEMENT BAR */}
       <div className={`w-full bg-brand-navy relative overflow-hidden transition-all duration-500 ${isScrolled ? 'h-0 opacity-0' : 'h-9 opacity-100 border-b border-white/5'}`}>
-        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-transparent', 'via-brand-gold/10', 'to-transparent', '-skew-x-12', 'translate-x-[-200%]', 'animate-[scan_8s_infinite]', 'pointer-events-none')}></div>
+        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-transparent', 'via-brand-gold/10', 'to-transparent', '-skew-x-12', 'translate-x-[-200%]', 'pointer-events-none')}></div>
         <div className={clsx('w-full', 'max-w-[1920px]', 'mx-auto', 'px-4', 'sm:px-6', 'md:px-8', 'lg:px-10', 'xl:px-12', 'h-full', 'flex', 'items-center', 'justify-between', 'relative', 'z-10')}>
           <div className={clsx('flex', 'items-center', 'gap-6')}>
             <div className={clsx('flex', 'items-center', 'gap-2')}>
