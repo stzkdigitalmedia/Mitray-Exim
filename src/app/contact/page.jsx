@@ -147,7 +147,7 @@ export default function ContactPage() {
             badge="GET IN TOUCH"
             title="Get in Touch."
             description="Have questions about our fresh fruits and vegetable exports, sourcing, or custom packing solutions? Our dedicated team is here to provide swift, reliable export assistance."
-            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/v1783333585/contact_dq4zlh.png"
+            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1783333585/contact_dq4zlh.png"
             breadcrumbs={[
                { label: 'Home', href: '/' },
                { label: 'Contact Us' }

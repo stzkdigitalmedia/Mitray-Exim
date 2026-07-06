@@ -63,7 +63,7 @@ export default function ProductsPage() {
             badge="AGRICULTURAL EXPORTS"
             title="PRODUCT CATALOG."
             description="Browse our high-quality agricultural exports. Sourced directly from farms and packaged to premium international standards."
-            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/v1783333595/products_ht3hyl.png"
+            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1783333595/products_ht3hyl.png"
             breadcrumbs={[
                { label: 'Home', href: '/' },
                { label: 'Products' }

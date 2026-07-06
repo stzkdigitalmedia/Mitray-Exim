@@ -13,7 +13,7 @@ export const PRODUCTS = [
     slug: "banana",
     name: "Banana (G9 Premium)",
     category: "fresh-fruits",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534039/WhatsApp_Image_2026-06-15_at_10.52.19_si4fif.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534039/WhatsApp_Image_2026-06-15_at_10.52.19_si4fif.jpg",
     description:
       "Premium Grand Naine (G9) bananas. Grade-A quality, hand-picked, washed and treated for export. Features large uniform size, delicious sweet flavor, and excellent shelf life.",
     origin: "India",
@@ -25,7 +25,7 @@ export const PRODUCTS = [
     slug: "kesar-mango",
     name: "Kesar Mango",
     category: "fresh-fruits",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534038/WhatsApp_Image_2026-06-15_at_10.57.08_qgldwo.jpg?q=80&w=2070&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534038/WhatsApp_Image_2026-06-15_at_10.57.08_qgldwo.jpg?q=80&w=2070&auto=format&fit=crop",
 
 
     description:
@@ -39,7 +39,7 @@ export const PRODUCTS = [
     slug: "alphanso-mango",
     name: "Alphonso Mango",
     category: "fresh-fruits",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534032/WhatsApp_Image_2026-06-15_at_10.58.21_j0mvnp.jpg?q=80&w=2070&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534032/WhatsApp_Image_2026-06-15_at_10.58.21_j0mvnp.jpg?q=80&w=2070&auto=format&fit=crop",
     description:
       "The legendary Hapus (Alphonso) mango, characterized by its rich golden-yellow skin, smooth texture, and unrivaled sweet flavor profile. Carefully selected and hot-water treated.",
     origin: "India",
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     slug: "pomegranate",
     name: "Pomegranate (Bhagwa Variety)",
     category: "fresh-fruits",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534037/WhatsApp_Image_2026-06-15_at_10.54.12_vqww0s.jpg?q=80&w=2070&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534037/WhatsApp_Image_2026-06-15_at_10.54.12_vqww0s.jpg?q=80&w=2070&auto=format&fit=crop",
     description:
       "Premium quality Bhagwa pomegranates, globally famous for their deep red arils, soft seeds, sweet taste, and high juice content. Sourced directly from certified orchards of Maharashtra.",
     origin: "India",
@@ -101,7 +101,7 @@ export const PRODUCTS = [
     slug: "green-chilli",
     name: "Fresh Green Chilli (G4/Teja)",
     category: "fresh-vegetables",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534036/jonas-ducker-4ijhsBXLY0c-unsplash_zzf1jo.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534036/jonas-ducker-4ijhsBXLY0c-unsplash_zzf1jo.jpg",
     description:
       "Extremely fresh, vibrant green chillies with high heat quotient. Selected for consistent length, deep green color, and high shelf stability under cold chain transport.",
     origin: "India",
@@ -223,7 +223,7 @@ export const PRODUCTS = [
     slug: "garam-masala",
     name: "Signature Garam Masala Blend",
     category: "spices",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534033/gerome-oberste-lehn-HPQOy7x6mAA-unsplash_x9j2d7.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534033/gerome-oberste-lehn-HPQOy7x6mAA-unsplash_x9j2d7.jpg",
     description:
       "Authentic Indian spice blend crafted from premium cardamom, cloves, cinnamon, cumin, and black pepper. Perfect balancing agent for diverse global cuisines.",
     origin: "India",
@@ -237,7 +237,7 @@ export const PRODUCTS = [
     slug: "basmati-rice-1121",
     name: "1121 Basmati Rice (XXL Grain)",
     category: "rice",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534032/WhatsApp_Image_2026-06-15_at_11.49.34_zs8d6x.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534032/WhatsApp_Image_2026-06-15_at_11.49.34_zs8d6x.jpg",
     description:
       "World-famous 1121 Steam/Sella Basmati Rice. Features extra-long grains (average length 8.35mm+), delightful natural aroma, and a non-sticky fluffiness when cooked.",
     origin: "India",
@@ -249,7 +249,7 @@ export const PRODUCTS = [
     slug: "non-basmati-rice",
     name: "Premium Non-Basmati Rice",
     category: "rice",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534048/milled-rice-bowl-wooden-spoon-black-cement-floor_qp7wtm.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534048/milled-rice-bowl-wooden-spoon-black-cement-floor_qp7wtm.jpg",
     description:
       "Premium polished long-grain non-basmati rice (PR11/Sona Masoori varieties). Highly popular across Middle East and African markets for daily consumption.",
     origin: "India",
@@ -287,7 +287,7 @@ export const PRODUCTS = [
     slug: "onion-flakes",
     name: "Dehydrated Onion Flakes",
     category: "dehydrated",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534049/Onion-Flakes_qbtql5.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534049/Onion-Flakes_qbtql5.jpg",
     description:
       "High quality dehydrated onion flakes. Perfect moisture control, authentic sharp onion taste, and ideal for food packaging, ready-to-eat mixes, and culinary seasoning.",
     origin: "India",
@@ -299,7 +299,7 @@ export const PRODUCTS = [
     slug: "garlic-flakes",
     name: "Dehydrated Garlic Flakes",
     category: "dehydrated",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534036/olga-kovalski-w8_BZ4OpNvE-unsplash_lupxgj.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534036/olga-kovalski-w8_BZ4OpNvE-unsplash_lupxgj.jpg",
     description:
       "Dehydrated garlic slices of premium Grade-A quality. Aromatic, clean, and free of defects, prepared under state-of-the-art dehydration facilities.",
     origin: "India",
@@ -323,7 +323,7 @@ export const PRODUCTS = [
     slug: "onion-powder",
     name: "Dehydrated Onion Powder",
     category: "dehydrated",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534040/organic-food-powder-background_o86pu7.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534040/organic-food-powder-background_o86pu7.jpg",
     description:
       "Free-flowing fine dehydrated onion powder. No artificial additives, intense natural flavor, and highly soluble in water, popular in industrial food seasoning.",
     origin: "India",
@@ -335,7 +335,7 @@ export const PRODUCTS = [
     slug: "garlic-powder",
     name: "Dehydrated Garlic Powder",
     category: "dehydrated",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534032/WhatsApp_Image_2026-06-15_at_12.07.32_pd35an.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534032/WhatsApp_Image_2026-06-15_at_12.07.32_pd35an.jpg",
     description:
       "Pure dehydrated garlic powder with powerful aromatic characteristics. Ideal for sauces, soups, meat processing, and high-fidelity spice blending.",
     origin: "India",
@@ -349,7 +349,7 @@ export const PRODUCTS = [
     slug: "wheat-flour",
     name: "Premium Whole Wheat Flour (Atta)",
     category: "wheat-flour",
-    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1781534036/flour-wheat-flat-lay-wooden_gxvxmw.jpg",
+    image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1781534036/flour-wheat-flat-lay-wooden_gxvxmw.jpg",
     description:
       "100% natural, premium stone-ground whole wheat flour. Sourced from high-gluten Sharbati and Lokwan wheat varieties of Madhya Pradesh, perfect for flatbreads and bakery goods.",
     origin: "India",

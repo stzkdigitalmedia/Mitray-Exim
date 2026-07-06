@@ -39,7 +39,7 @@ export function Hero() {
             </div>
 
             {/* INTEGRATED BRAND HEADLINE */}
-            <h1 className={clsx('text-4xl', 'sm:text-5xl', 'md:text-6xl', 'lg:text-6xl', 'xl:text-[5.5rem]', '2xl:text-7xl', 'font-black', 'text-white', 'mb-4', 'md:mb-6', 'tracking-tight', 'leading-[1]', 'md:leading-[0.95]', 'min-h-[120px]', 'sm:min-h-[140px]', 'md:min-h-[160px]')}>
+            <h1 className={clsx('text-4xl', 'sm:text-5xl', 'md:text-6xl', 'lg:text-6xl', 'xl:text-[5.5rem]', '2xl:text-7xl', 'font-black', 'text-white', 'mb-4', 'md:mb-6', 'tracking-tight', 'leading-[1]', 'md:leading-[0.95]', 'min-h-[160px]', 'sm:min-h-[180px]', 'md:min-h-[200px]', 'xl:min-h-[240px]')}>
               <span className={clsx('block', 'animate-reveal', 'opacity-0')}>MITRAY <span className="text-gradient">EXIM.</span></span>
               <div className={clsx('block', 'animate-reveal', 'delay-500', 'opacity-0', 'text-white/40', 'uppercase', 'mt-2')}>
                 <TypeAnimation
@@ -61,7 +61,7 @@ export function Hero() {
               </div>
             </h1>
 
-            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'xl:text-2xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'typewriter-paragraph', 'opacity-100', 'uppercase', 'tracking-tight')}>
+            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'xl:text-2xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'animate-reveal', 'delay-300', 'opacity-0', 'uppercase', 'tracking-tight')}>
               India's leading merchant exporter delivering <span className={clsx('text-white', 'font-black', 'decoration-brand-gold', 'decoration-2', 'underline', 'underline-offset-4', 'md:underline-offset-8')}>Fresh Vegetables</span>, Fruits, and Spices to strategic global markets.
             </p>
 

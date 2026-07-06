@@ -15,17 +15,17 @@ const GALLERY_CATEGORIES = [
 ];
 
 const ALL_IMAGES = [
-   { id: 1, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519301/IMG_5096_gub3pj.jpg", title: "Showcase Image 1" },
-   { id: 2, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519291/20251229_092143_bree3q.jpg", title: "Showcase Image 2" },
-   { id: 3, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519235/20251228_133115_o97hyh.jpg", title: "Showcase Image 3" },
-   { id: 4, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519228/20251229_092239_khvdar.jpg", title: "Showcase Image 4" },
-   { id: 5, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519185/20251228_110625_wcz2h0.jpg", title: "Showcase Image 5" },
-   { id: 6, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519129/20251228_110611_b1wpqu.jpg", title: "Showcase Image 6" },
-   { id: 7, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519069/20251229_092248_igaxj7.jpg", title: "Showcase Image 7" },
-   { id: 8, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519056/20251229_092237_xadbq1.jpg", title: "Showcase Image 8" },
-   { id: 9, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519023/20251228_110601_a1b85w.jpg", title: "Showcase Image 9" },
-   { id: 10, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772519003/20251229_092254_llu4y1.jpg", title: "Showcase Image 10" },
-   { id: 11, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/v1772518938/20260129_110600_kicodw.jpg", title: "Showcase Image 11" }
+   { id: 1, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519301/IMG_5096_gub3pj.jpg", title: "Showcase Image 1" },
+   { id: 2, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519291/20251229_092143_bree3q.jpg", title: "Showcase Image 2" },
+   { id: 3, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519235/20251228_133115_o97hyh.jpg", title: "Showcase Image 3" },
+   { id: 4, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519228/20251229_092239_khvdar.jpg", title: "Showcase Image 4" },
+   { id: 5, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519185/20251228_110625_wcz2h0.jpg", title: "Showcase Image 5" },
+   { id: 6, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519129/20251228_110611_b1wpqu.jpg", title: "Showcase Image 6" },
+   { id: 7, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519069/20251229_092248_igaxj7.jpg", title: "Showcase Image 7" },
+   { id: 8, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519056/20251229_092237_xadbq1.jpg", title: "Showcase Image 8" },
+   { id: 9, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519023/20251228_110601_a1b85w.jpg", title: "Showcase Image 9" },
+   { id: 10, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772519003/20251229_092254_llu4y1.jpg", title: "Showcase Image 10" },
+   { id: 11, category: "all", src: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1772518938/20260129_110600_kicodw.jpg", title: "Showcase Image 11" }
 ];
 
 export default function GalleryPage() {
