@@ -17,6 +17,7 @@ export function Hero() {
           alt="MITRAY EXIM Premium Agricultural Exports India" 
           fill
           priority={true}
+          quality={60}
           className={clsx('object-cover', 'opacity-75')}
         />
         {/* MINIMAL THEME OVERLAY (LEFT TO RIGHT) */}
