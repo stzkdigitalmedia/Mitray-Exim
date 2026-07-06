@@ -17,7 +17,7 @@ export default function CertificationsPage() {
             badge="QUALITY ASSURANCE"
             title="TRUSTED. CERTIFICATION."
             description="Access our quality assurance certifications and compliance documentation. All products are fully verified and certified to meet international trade standards."
-            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto/v1783333593/certificate_pmygso.png"
+            backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1783333593/certificate_pmygso.png"
             breadcrumbs={[
                { label: 'Home', href: '/' },
                { label: 'Certifications' }

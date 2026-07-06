@@ -13,7 +13,7 @@ export function Hero() {
       {/* BACKGROUND ARCHITECTURE */}
       <div className={clsx('absolute', 'inset-0', 'z-0')}>
         <Image 
-          src="/homeHero.png" 
+          src="/homeHero.jpg" 
           alt="MITRAY EXIM Premium Agricultural Exports India" 
           fill
           priority={true}
