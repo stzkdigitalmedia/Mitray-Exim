@@ -38,6 +38,8 @@ export function Footer() {
                 <img
                   src="/newLogo.png"
                   alt="Mitray Exim"
+                  width="150"
+                  height="50"
                   className="h-10 md:h-12 w-auto object-contain"
                 />
               </div>

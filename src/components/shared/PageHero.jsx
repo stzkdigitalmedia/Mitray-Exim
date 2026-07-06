@@ -24,7 +24,6 @@ export function PageHero({
               alt={title}
               fill
               priority={true}
-              unoptimized={true}
               className={clsx('object-cover', 'opacity-75')}
             />
             {/* Elegant Gradient Overlays */}

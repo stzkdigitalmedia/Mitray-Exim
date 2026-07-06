@@ -5,6 +5,7 @@ import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import "../styles/global.css";
 import clsx from "clsx";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,17 +62,18 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
 
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CR6BTGXZGZ"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-CR6BTGXZGZ');
-            `,
-          }}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-CR6BTGXZGZ" 
+          strategy="afterInteractive"
         />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CR6BTGXZGZ');
+          `}
+        </Script>
       </head>
       <body className={clsx(inter.variable, outfit.variable, 'min-h-screen', 'flex', 'flex-col', 'bg-white', 'antialiased', 'text-slate-900', 'font-inter', 'selection:bg-brand-gold', 'selection:text-brand-navy')}>
         <script
