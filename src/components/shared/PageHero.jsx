@@ -25,7 +25,7 @@ export function PageHero({
               fill
               priority={true}
               unoptimized={true}
-              className={clsx('object-cover', 'opacity-75', 'animate-subtle-zoom')}
+              className={clsx('object-cover', 'opacity-75')}
             />
             {/* Elegant Gradient Overlays */}
             <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-navy', 'via-brand-navy/30', 'to-transparent')}></div>
