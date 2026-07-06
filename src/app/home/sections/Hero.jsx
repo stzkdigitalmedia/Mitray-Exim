@@ -56,24 +56,24 @@ export function Hero() {
                   ]}
                   wrapper="span"
                   speed={20}
-                  repeat={Infinity}
+                  repeat={0}
                   className="inline-block"
                 />
               </div>
             </h1>
 
-            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'xl:text-2xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'uppercase', 'tracking-tight')}>
+            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'xl:text-2xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'animate-reveal', 'delay-300', 'opacity-0', 'uppercase', 'tracking-tight')}>
               India's leading merchant exporter delivering <span className={clsx('text-white', 'font-black', 'decoration-brand-gold', 'decoration-2', 'underline', 'underline-offset-4', 'md:underline-offset-8')}>Fresh Vegetables</span>, Fruits, and Spices to strategic global markets.
             </p>
 
             <div className={clsx('flex', 'flex-col', 'sm:flex-row', 'items-stretch', 'justify-center', 'sm:justify-start', 'gap-4', 'md:gap-6')}>
-              <Link href="/products" className={clsx('group', 'relative', 'w-full', 'sm:w-auto', 'px-8', 'md:px-10', 'py-4', 'md:py-5', 'bg-brand-gold', 'rounded-xl', 'text-brand-navy', 'font-black', 'uppercase', 'tracking-[0.2em]', 'text-xs', 'sm:text-sm', 'md:text-base', 'shadow-2xl', 'hover:bg-white', 'transition-all', 'duration-700', 'active:scale-95', 'overflow-hidden', 'flex', 'items-center', 'justify-center')}>
+              <Link href="/products" className={clsx('group', 'relative', 'w-full', 'sm:w-auto', 'px-8', 'md:px-10', 'py-4', 'md:py-5', 'bg-brand-gold', 'rounded-xl', 'text-brand-navy', 'font-black', 'uppercase', 'tracking-[0.2em]', 'text-xs', 'sm:text-sm', 'md:text-base', 'shadow-2xl', 'hover:bg-white', 'transition-all', 'duration-700', 'active:scale-95', 'overflow-hidden', 'animate-reveal', 'delay-500', 'opacity-0', 'flex', 'items-center', 'justify-center')}>
                 <span className={clsx('relative', 'z-10', 'flex', 'items-center', 'justify-center', 'gap-3', 'md:gap-4')}>
                   Explore Products <FiArrowRight className={clsx('text-sm', 'md:text-xl', 'group-hover:translate-x-2', 'transition-transform', 'duration-500')} />
                 </span>
               </Link>
 
-              <div className={clsx('flex', 'items-center', 'gap-3', 'md:gap-4', 'px-4', 'sm:px-6', 'md:px-8', 'py-3', 'sm:py-4', 'md:py-5', 'border', 'border-white/10', 'rounded-xl', 'bg-white/5', 'backdrop-blur-md', 'shadow-sm', 'hover:bg-white/10', 'transition-all', 'group', 'cursor-pointer', 'w-full', 'sm:w-auto', 'justify-center', 'sm:justify-start')}>
+              <div className={clsx('flex', 'items-center', 'gap-3', 'md:gap-4', 'px-4', 'sm:px-6', 'md:px-8', 'py-3', 'sm:py-4', 'md:py-5', 'border', 'border-white/10', 'rounded-xl', 'bg-white/5', 'backdrop-blur-md', 'shadow-sm', 'hover:bg-white/10', 'transition-all', 'group', 'cursor-pointer', 'w-full', 'sm:w-auto', 'justify-center', 'sm:justify-start', 'animate-reveal', 'delay-700', 'opacity-0')}>
                  <div className={clsx('w-8', 'h-8', 'md:w-9', 'md:h-9', 'rounded-lg', 'bg-brand-gold/20', 'flex', 'items-center', 'justify-center', 'text-brand-gold', 'group-hover:rotate-12', 'transition-transform')}>
                    <FiGlobe className={clsx('text-sm', 'md:text-base')} />
                  </div>
