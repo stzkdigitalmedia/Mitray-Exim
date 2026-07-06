@@ -22,7 +22,7 @@ export default function AboutPage() {
         badge="ESTABLISHED 2026"
         title="ABOUT MITRAY EXIM."
         description="A premier merchant exporter from India, delivering nature's finest agricultural treasures to global markets with uncompromising quality standards."
-        backgroundImage="/hero/about.png"
+        backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/v1783333590/about_uwtznu.png"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About' }

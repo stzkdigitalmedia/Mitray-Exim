@@ -90,7 +90,7 @@ export default function ShippingPage() {
         badge="OUR EXPORT SERVICES & LOGISTICS"
         title="Services & Logistics."
         description="We source fresh onions, potatoes, green chillies, mangoes, and grapes directly from trusted Indian farms, packing them securely and shipping them under precise cooling so they arrive perfectly fresh at your port."
-        backgroundImage="/hero/services.png"
+        backgroundImage="https://res.cloudinary.com/dtkdcrra2/image/upload/v1783333593/services_hakvbd.png"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services & Logistics' }
