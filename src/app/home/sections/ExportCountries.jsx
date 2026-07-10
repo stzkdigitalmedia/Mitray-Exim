@@ -38,7 +38,7 @@ const EXPORT_COUNTRIES = [
   { code: "om", name: "Oman", flag: "🇴🇲", region: "Gulf", coords: [58.4059, 23.5859] },
   { code: "kw", name: "Kuwait", flag: "🇰🇼", region: "Gulf", coords: [47.9774, 29.3759] },
   { code: "gb", name: "United Kingdom", flag: "🇬🇧", region: "Europe", coords: [-0.1276, 51.5074] },
-  { code: "de", name: "European Countries", flag: "🇪🇺", region: "Europe", coords: [10.4515, 51.1657] },
+  { code: "eu", name: "European Countries", flag: "🇪🇺", region: "Europe", coords: [10.4515, 51.1657] },
   { code: "ru", name: "Russia", flag: "🇷🇺", region: "Europe", coords: [37.6173, 55.7558] },
   { code: "us", name: "United States", flag: "🇺🇸", region: "Americas", coords: [-95.7129, 37.0902] },
   { code: "ca", name: "Canada", flag: "🇨🇦", region: "Americas", coords: [-106.3468, 56.1304] },
@@ -126,10 +126,11 @@ export function ExportCountries() {
               <button
                 key={c.code}
                 onClick={() => handleCountryFocus(c)}
-                className={`whitespace-nowrap px-2.5 py-1.5 sm:px-3 sm:py-2 md:px-3.5 md:py-2.5 lg:px-4 lg:py-3 rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-2xl text-[11px] sm:text-[11px] md:text-[10.5px] lg:text-[13px] font-black uppercase tracking-wide sm:tracking-wide md:tracking-widest transition-all duration-500 border shrink-0 ${hovered === c.name ? 'bg-brand-navy text-white border-brand-navy shadow-lg scale-105' : 'bg-white text-slate-400 border-slate-100 hover:border-slate-200'
+                className={`whitespace-nowrap flex items-center px-2.5 py-1.5 sm:px-3 sm:py-2 md:px-3.5 md:py-2.5 lg:px-4 lg:py-3 rounded-lg sm:rounded-lg md:rounded-xl lg:rounded-2xl text-[11px] sm:text-[11px] md:text-[10.5px] lg:text-[13px] font-black uppercase tracking-wide sm:tracking-wide md:tracking-widest transition-all duration-500 border shrink-0 ${hovered === c.name ? 'bg-brand-navy text-white border-brand-navy shadow-lg scale-105' : 'bg-white text-slate-400 border-slate-100 hover:border-slate-200'
                   }`}
               >
-                {c.flag} {c.name}
+                <img src={`https://hatscripts.github.io/circle-flags/flags/${c.code}.svg`} alt={c.name} className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 md:mr-2 rounded-full object-cover shrink-0" />
+                {c.name}
               </button>
             ))}
           </div>
@@ -204,8 +205,8 @@ export function ExportCountries() {
                       onClick={() => handleCountryFocus(country)}
                     >
                       <circle r={hovered === country.name ? 12 : 7} fill={hovered === country.name ? "#D4A574" : "#CBD5E1"} opacity={hovered === country.name ? 0.3 : 0.1} className={hovered === country.name ? 'animate-ping' : ''} />
-                      <circle r={hovered === country.name ? 9 : 6} fill="white" stroke={hovered === country.name ? "#D4A574" : "#E2E8F0"} strokeWidth="1" />
-                      <text textAnchor="middle" y={hovered === country.name ? 3 : 2} className={`transition-all duration-300 ${hovered === country.name ? 'text-[14px]' : 'text-[9px]'}`}>{country.flag}</text>
+                      <circle r={hovered === country.name ? 8 : 5} fill="white" stroke={hovered === country.name ? "#D4A574" : "#E2E8F0"} strokeWidth="0.5" className="transition-all duration-300" />
+                      <image href={`https://hatscripts.github.io/circle-flags/flags/${country.code}.svg`} x={hovered === country.name ? -7 : -4} y={hovered === country.name ? -7 : -4} width={hovered === country.name ? 14 : 8} height={hovered === country.name ? 14 : 8} className="transition-all duration-300 pointer-events-none" />
                     </g>
                   </Marker>
                 ))}
@@ -224,7 +225,9 @@ export function ExportCountries() {
 
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
                   <div className="flex items-center gap-6 w-full">
-                    <div className="text-5xl md:text-7xl animate-reveal">{EXPORT_COUNTRIES.find(c => c.name === hovered)?.flag}</div>
+                    <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full border-2 border-slate-100 shadow-md overflow-hidden animate-reveal">
+                       <img src={`https://hatscripts.github.io/circle-flags/flags/${EXPORT_COUNTRIES.find(c => c.name === hovered)?.code}.svg`} alt="Flag" className="w-full h-full object-cover" />
+                    </div>
                     <div className="flex-1">
                       <p className="text-[8px] md:text-[10px] font-black text-brand-gold uppercase tracking-[0.3em] mb-1">Global Trade Partner</p>
                       <h3 className="text-xl md:text-3xl font-black text-brand-navy tracking-tighter uppercase leading-none">{hovered}</h3>
