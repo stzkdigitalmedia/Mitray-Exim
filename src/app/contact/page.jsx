@@ -182,9 +182,9 @@ export default function ContactPage() {
                         {[
                            {
                               label: "Direct Trade Line",
-                              val: "+91 8878963333",
+                              val: "+91 7778886559",
                               icon: <FiPhone className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
-                              link: "tel:+918878963333",
+                              link: "tel:+917778886559",
                               color: "from-blue-500 to-blue-600",
                               bgColor: "bg-blue-50 group-hover:bg-blue-100"
                            },
@@ -198,7 +198,7 @@ export default function ContactPage() {
                            },
                            {
                               label: "Chat on WhatsApp",
-                              val: "+91 8878963333",
+                              val: "+91 7778886559",
                               icon: <FiMessageCircle className={clsx('w-5', 'sm:w-6', 'md:w-7', 'lg:w-8', 'h-5', 'sm:h-6', 'md:h-7', 'lg:h-8')} />,
                               link: "https://wa.me/qr/FDGPNCKQQGMCL1",
                               color: "from-emerald-500 to-emerald-600",
@@ -388,7 +388,7 @@ export default function ContactPage() {
                                           required
                                           maxLength={20}
                                           className={`relative w-full bg-white border-2 ${errors.phone ? 'border-red-400 focus:border-red-500 focus:ring-red-500/10' : 'border-slate-200 focus:border-brand-gold focus:ring-brand-gold/10'} rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4 text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-brand-navy outline-none transition-all duration-300 shadow-sm placeholder:text-slate-400`}
-                                          placeholder="+91 8878963333"
+                                          placeholder="+91 7778886559"
                                        />
                                     </div>
                                     {errors.phone && <p className={clsx('text-red-500', 'text-[9px]', 'sm:text-[10px]', 'font-bold', 'mt-1', 'uppercase', 'tracking-wide')}>{errors.phone}</p>}

@@ -127,7 +127,7 @@ export function Footer() {
                   </svg>
                 </div>
                 <div className="text-xs md:text-sm font-bold uppercase tracking-widest">
-                  <a href="tel:+918878963333" className="text-slate-300 hover:text-white transition-colors block mb-1">+91 8878963333</a>
+                  <a href="tel:+917778886559" className="text-slate-300 hover:text-white transition-colors block mb-1">+91 7778886559</a>
                   <a href="mailto:info@mitrayexim.com" className="text-brand-gold hover:text-white transition-colors block">info@mitrayexim.com</a>
                 </div>
               </div>

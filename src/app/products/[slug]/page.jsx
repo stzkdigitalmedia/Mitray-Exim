@@ -112,7 +112,7 @@ export default function ProductDetailPage({ params }) {
                               <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-brand-gold border border-slate-100">
                                  <FiPhone />
                               </div>
-                              <span className="text-xs md:text-sm font-bold uppercase tracking-widest">+91 8878963333</span>
+                              <span className="text-xs md:text-sm font-bold uppercase tracking-widest">+91 7778886559</span>
                            </div>
                         </div>
                         <Link href="/contact" className="block w-full py-4.5 md:py-6 bg-brand-navy text-white rounded-xl text-xs md:text-sm font-black text-center uppercase tracking-[0.3em] hover:bg-brand-gold hover:text-brand-navy transition-all duration-500 shadow-lg">
