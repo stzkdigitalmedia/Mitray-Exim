@@ -20,7 +20,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "MITRAY EXIM – Premium Vegetable & Fruit Exporter from India",
+  title: "MITRAY EXIM - Exporter of Spices, Rice, Fruits & Vegetables from India",
   description:
     "MITRAY EXIM is a leading merchant exporter of fresh vegetables, fruits, spices, and grains from India. APEDA & FSSAI certified partner for global markets including UAE, Qatar, and Saudi Arabia.",
   keywords:
@@ -47,9 +47,9 @@ export const metadata = {
     site: "@mitrayexim",
   },
   icons: {
-    icon: '/newLogo.png',
-    shortcut: '/newLogo.png',
-    apple: '/newLogo.png',
+    icon: '/mitrayTab.png',
+    shortcut: '/mitrayTab.png',
+    apple: '/mitrayTab.png',
   },
 };
 
