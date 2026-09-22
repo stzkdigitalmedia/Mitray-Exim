@@ -87,7 +87,7 @@ export const PRODUCTS = [
   // ==================== FRESH VEGETABLES ====================
   {
     slug: "onion",
-    name: "Fresh Red Onion",
+    name: "Fresh xion",
     category: "fresh-vegetables",
     image: "/products/shallot-background.jpg",
     description:

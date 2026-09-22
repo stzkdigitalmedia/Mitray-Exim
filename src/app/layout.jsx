@@ -47,9 +47,9 @@ export const metadata = {
     site: "@mitrayexim",
   },
   icons: {
-    icon: '/mitrayTab.png',
-    shortcut: '/mitrayTab.png',
-    apple: '/mitrayTab.png',
+    icon: '/favicon/svg/SVG/512.svg',
+    shortcut: '/favicon/svg/SVG/512.svg',
+    apple: '/favicon/svg/SVG/512.svg',
   },
 };
 
@@ -62,8 +62,8 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
 
         {/* Google Analytics */}
-        <Script 
-          src="https://www.googletagmanager.com/gtag/js?id=G-CR6BTGXZGZ" 
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CR6BTGXZGZ"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
