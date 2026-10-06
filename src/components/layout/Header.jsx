@@ -71,10 +71,13 @@ export function Header() {
               }`}
           >
             {/* LOGO */}
-            <Link href="/" className={clsx('group', 'flex', 'items-center', 'space-x-4', 'transition-transform', 'duration-500', 'hover:scale-[1.02]')}>
-              <img loading="lazy" decoding="async"
+            <Link href="/" className={clsx('group', 'flex', 'items-center', 'space-x-4', 'transition-transform', 'duration-500', 'hover:scale-[1.02]')} aria-label="Mitray Home">
+              <img
                 src="/newLogo.png"
-                alt="MITRAY EXIM"
+                alt="Mitray - Leading Export Company in India"
+                width={160}
+                height={48}
+                decoding="async"
                 className={`object-contain transition-all duration-500 ${
                   isScrolled 
                     ? "w-[90px] sm:w-[110px] md:w-[130px] lg:w-[140px] xl:w-[160px] brightness-100" 
@@ -137,6 +140,8 @@ export function Header() {
  
               {/* MOBILE MENU TOGGLE */}
               <button
+                aria-label={isMenuOpen ? "Close mobile navigation menu" : "Open mobile navigation menu"}
+                aria-expanded={isMenuOpen}
                 className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-all
                   ${isScrolled
                     ? 'bg-brand-navy text-white shadow-sm'
@@ -163,9 +168,10 @@ export function Header() {
           {/* Mobile Header Top inside Menu */}
           <div className={clsx('flex', 'justify-between', 'items-center', 'absolute', 'top-6', 'left-6', 'right-6', 'sm:top-8', 'sm:left-10', 'sm:right-10')}>
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-               <img loading="lazy" decoding="async" src="/newLogo.png" alt="MITRAY EXIM" className={clsx('w-[100px]', 'sm:w-[120px]', 'brightness-0', 'invert')} />
+               <img loading="lazy" decoding="async" src="/newLogo.png" alt="Mitray - Leading Export Company in India" className={clsx('w-[100px]', 'sm:w-[120px]', 'brightness-0', 'invert')} />
             </Link>
             <button
+              aria-label="Close mobile navigation menu"
               onClick={() => setIsMenuOpen(false)}
               className={clsx('w-12', 'h-12', 'rounded-full', 'bg-white/10', 'hover:bg-brand-gold', 'hover:text-brand-navy', 'flex', 'items-center', 'justify-center', 'text-white', 'transition-all', 'duration-300', 'backdrop-blur-md', 'border', 'border-white/20', 'shadow-xl')}
             >

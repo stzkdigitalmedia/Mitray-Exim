@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { CompanyIntro } from "./sections/CompanyIntro";
@@ -11,8 +12,42 @@ import { FiArrowRight, FiActivity, FiGlobe, FiShield, FiZap } from "react-icons/
 import clsx from "clsx";
 
 export const metadata = {
-  title: "About MITRAY EXIM – Premium Agricultural Exporters India",
-  description: "Learn about MITRAY EXIM's mission, vision, and institutional excellence in global agricultural exports from India.",
+  title: "About Us - Leading Export Company in Gujarat, India",
+  description:
+    "Learn about Mitray, a trusted merchant exporter in Gujarat, India specializing in fresh fruits, authentic Indian spices, fresh vegetables, and certified agricultural products.",
+  keywords: [
+    "About Mitray",
+    "Export company in Gujarat",
+    "Merchant exporter",
+    "Exporter in India",
+    "Food exporter",
+    "Agriculture products exporter",
+  ],
+  alternates: {
+    canonical: "https://www.mitrayexim.com/about",
+  },
+  openGraph: {
+    title: "About Us - Leading Export Company in Gujarat, India | Mitray",
+    description:
+      "Learn about Mitray, a trusted merchant exporter in Gujarat, India specializing in fresh fruits, authentic Indian spices, fresh vegetables, and certified agricultural products.",
+    url: "https://www.mitrayexim.com/about",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Mitray - Leading Export Company in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Leading Export Company in Gujarat, India | Mitray",
+    description:
+      "Learn about Mitray, a trusted merchant exporter in Gujarat, India specializing in fresh fruits, authentic Indian spices, and agricultural products.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function AboutPage() {
@@ -123,7 +158,7 @@ export default function AboutPage() {
                   Connect with MITRAY EXIM today to discuss your agricultural import needs and receive a tailored product and pricing quote.
                 </p>
 
-                <a href="/contact">
+                <Link href="/contact">
                   <button
                     className={clsx('group', 'relative', 'px-6', 'py-3', 'sm:px-8', 'sm:py-4', 'md:px-10', 'md:py-5', 'lg:px-12', 'lg:py-6', 'bg-brand-navy', 'text-white', 'rounded-sm', 'font-black', 'uppercase', 'tracking-[0.12em]', 'sm:tracking-[0.18em]', 'md:tracking-[0.24em]', 'lg:tracking-[0.3em]', 'text-[11px]', 'sm:text-xs', 'md:text-sm', 'shadow-2xl', 'hover:bg-brand-gold', 'hover:text-brand-navy', 'transition-all', 'duration-700', 'active:scale-95', 'overflow-hidden')}
                   >
@@ -132,7 +167,7 @@ export default function AboutPage() {
                       <FiArrowRight className={clsx('text-base', 'sm:text-lg', 'md:text-xl', 'group-hover:translate-x-2', 'transition-transform', 'duration-300')} />
                     </span>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </Container>

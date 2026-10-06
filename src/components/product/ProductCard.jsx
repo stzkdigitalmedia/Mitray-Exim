@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FiGlobe, FiPackage, FiShield, FiArrowUpRight, FiZap, FiArrowRight } from "react-icons/fi";
 import clsx from "clsx";
 
@@ -51,7 +52,7 @@ export function ProductCard({ product, onQuoteClick }) {
       <div className={clsx('absolute', 'inset-0', 'z-0')}>
         <Image
           src={product.image || getProductImage(product.category)}
-          alt={product.name}
+          alt={product.alt || `${product.name} - Exporter in India`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className={`object-cover transition-transform duration-1000 ${isActive ? 'scale-110 opacity-40' : 'group-hover:scale-110 opacity-70 group-hover:opacity-40'}`}
@@ -100,12 +101,12 @@ export function ProductCard({ product, onQuoteClick }) {
 
         {/* ACTIONS */}
         <div className={`flex gap-3 pt-2 transition-all duration-700 delay-200 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-16 md:translate-y-12 group-hover:translate-y-0 opacity-0 group-hover:opacity-100'}`}>
-          <a
+          <Link
             href={`/products/${product.slug}`}
             className={clsx('flex-1', 'bg-white/10', 'backdrop-blur-xl', 'border', 'border-white/20', 'text-white', 'font-black', 'text-[9px]', 'md:text-[10px]', 'uppercase', 'tracking-[0.2em]', 'md:tracking-[0.3em]', 'py-3', 'md:py-4', 'rounded-xl', 'hover:bg-white/20', 'transition-all', 'duration-500', 'flex', 'items-center', 'justify-center', 'gap-2')}
           >
             Details
-          </a>
+          </Link>
           <button
             onClick={() => onQuoteClick ? onQuoteClick() : window.location.href = '/contact'}
             className={clsx('flex-1', 'bg-brand-gold', 'text-brand-navy', 'font-black', 'text-[9px]', 'md:text-[10px]', 'uppercase', 'tracking-[0.2em]', 'md:tracking-[0.3em]', 'py-3', 'md:py-4', 'rounded-xl', 'shadow-2xl', 'hover:bg-white', 'transition-all', 'duration-500', 'flex', 'items-center', 'justify-center', 'gap-2')}

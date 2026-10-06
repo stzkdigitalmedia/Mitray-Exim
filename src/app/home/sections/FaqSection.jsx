@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { FiChevronDown, FiShield, FiActivity } from "react-icons/fi";
 
 export function FaqSection() {
@@ -67,6 +68,7 @@ export function FaqSection() {
               }`}>
                 <button
                   onClick={() => toggleFaq(idx)}
+                  aria-expanded={openIndex === idx}
                   className="w-full px-6 py-5 md:px-10 md:py-6 flex items-center justify-between text-left transition-all"
                 >
                   <div className="flex items-center gap-4 md:gap-6 flex-1">
@@ -111,13 +113,11 @@ export function FaqSection() {
 
         {/* FOOTER ACTION */}
         <div className="mt-12 text-center animate-reveal delay-1000 opacity-0">
-           <a href="/contact">
-              <button className="group relative px-8 py-4 bg-brand-navy text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-gold hover:text-brand-navy transition-all duration-700 shadow-xl overflow-hidden active:scale-95">
+           <Link href="/contact" className="inline-block group relative px-8 py-4 bg-brand-navy text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-gold hover:text-brand-navy transition-all duration-700 shadow-xl overflow-hidden active:scale-95">
                  <span className="relative z-10 flex items-center gap-3">
                     <FiActivity className="group-hover:rotate-12 transition-transform" /> Contact Our Support Desk
                  </span>
-              </button>
-           </a>
+              </Link>
         </div>
       </div>
     </section>

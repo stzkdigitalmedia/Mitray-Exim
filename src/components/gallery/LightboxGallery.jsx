@@ -87,6 +87,7 @@ export function LightboxGallery({ images }) {
 
            {/* FIXED HUD BUTTONS (Outside scroll area so they NEVER move) */}
            <button 
+             aria-label="Close image modal"
              onClick={() => setSelectedImage(null)}
              className="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 sm:w-12 h-10 sm:h-12 bg-white/10 hover:bg-brand-gold hover:text-brand-navy border-2 border-white/20 hover:border-brand-gold flex items-center justify-center text-white transition-all duration-300 rounded-full z-[600] shadow-2xl"
            >
@@ -94,6 +95,7 @@ export function LightboxGallery({ images }) {
            </button>
 
            <button 
+             aria-label="Previous gallery image"
              onClick={(e) => { e.stopPropagation(); handlePrevious(); }}
              className="absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 bg-white/10 hover:bg-brand-gold text-white hover:text-brand-navy border-2 border-white/20 hover:border-brand-gold flex items-center justify-center transition-all duration-300 rounded-full z-[600] shadow-2xl hidden sm:flex"
            >
@@ -101,6 +103,7 @@ export function LightboxGallery({ images }) {
            </button>
 
            <button 
+             aria-label="Next gallery image"
              onClick={(e) => { e.stopPropagation(); handleNext(); }}
              className="absolute right-2 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 bg-white/10 hover:bg-brand-gold text-white hover:text-brand-navy border-2 border-white/20 hover:border-brand-gold flex items-center justify-center transition-all duration-300 rounded-full z-[600] shadow-2xl hidden sm:flex"
            >

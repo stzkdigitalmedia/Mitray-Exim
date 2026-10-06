@@ -12,6 +12,7 @@ export const PRODUCTS = [
   {
     slug: "banana",
     name: "Banana (G9 Premium)",
+    alt: "Premium Banana Supplier",
     category: "fresh-fruits",
     image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1781534039/WhatsApp_Image_2026-06-15_at_10.52.19_si4fif.jpg",
     description:
@@ -24,6 +25,7 @@ export const PRODUCTS = [
   {
     slug: "kesar-mango",
     name: "Kesar Mango",
+    alt: "Indian Mango Export Company",
     category: "fresh-fruits",
     image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1781534038/WhatsApp_Image_2026-06-15_at_10.57.08_qgldwo.jpg?q=80&w=2070&auto=format&fit=crop",
 
@@ -38,6 +40,7 @@ export const PRODUCTS = [
   {
     slug: "alphanso-mango",
     name: "Alphonso Mango",
+    alt: "Indian Mango Export Company",
     category: "fresh-fruits",
     image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1781534032/WhatsApp_Image_2026-06-15_at_10.58.21_j0mvnp.jpg?q=80&w=2070&auto=format&fit=crop",
     description:
@@ -50,6 +53,7 @@ export const PRODUCTS = [
   {
     slug: "pomegranate",
     name: "Pomegranate (Bhagwa Variety)",
+    alt: "Fresh Pomegranate Exporter from India",
     category: "fresh-fruits",
     image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1781534037/WhatsApp_Image_2026-06-15_at_10.54.12_vqww0s.jpg?q=80&w=2070&auto=format&fit=crop",
     description:
@@ -62,6 +66,7 @@ export const PRODUCTS = [
   {
     slug: "semi-husked-coconut",
     name: "Semi Husked Coconut",
+    alt: "Fresh Coconut Exporter from India",
     category: "fresh-fruits",
     image: "/products/is-full-paddy.jpg",
     description:
@@ -74,6 +79,7 @@ export const PRODUCTS = [
   {
     slug: "peanuts",
     name: "Premium Raw Peanuts (Groundnuts)",
+    alt: "Indian Groundnuts & Peanuts Exporter",
     category: "fresh-fruits",
     image: "/products/assortment-peanuts.jpg",
     description:
@@ -87,7 +93,8 @@ export const PRODUCTS = [
   // ==================== FRESH VEGETABLES ====================
   {
     slug: "onion",
-    name: "Fresh xion",
+    name: "Fresh Red Onion",
+    alt: "Onion Exporter in India",
     category: "fresh-vegetables",
     image: "/products/shallot-background.jpg",
     description:
@@ -100,6 +107,7 @@ export const PRODUCTS = [
   {
     slug: "green-chilli",
     name: "Fresh Green Chilli (G4/Teja)",
+    alt: "Green Chilli Exporter Gujarat",
     category: "fresh-vegetables",
     image: "https://res.cloudinary.com/dtkdcrra2/image/upload/f_auto,q_auto,w_800,c_fit/v1781534036/jonas-ducker-4ijhsBXLY0c-unsplash_zzf1jo.jpg",
     description:
@@ -112,6 +120,7 @@ export const PRODUCTS = [
   {
     slug: "drumstick",
     name: "Fresh Drumstick (Moringa Pods)",
+    alt: "Fresh Drumstick Moringa Exporter India",
     category: "fresh-vegetables",
     image: "/products/spencerwing-moringa-pods-6497162_1920.jpg",
     description:
@@ -124,6 +133,7 @@ export const PRODUCTS = [
   {
     slug: "suran",
     name: "Suran (Elephant Foot Yam)",
+    alt: "Elephant Foot Yam Suran Exporter India",
     category: "fresh-vegetables",
     image: "/products/image.png",
     description:
@@ -136,6 +146,7 @@ export const PRODUCTS = [
   {
     slug: "tomato",
     name: "Fresh Hybrid Tomato",
+    alt: "Fresh Tomato Exporter India",
     category: "fresh-vegetables",
     image: "/products/top-view-fresh-tomatoes-surface.jpg",
     description:
@@ -150,6 +161,7 @@ export const PRODUCTS = [
   {
     slug: "red-chilli-powder",
     name: "Premium Red Chilli Powder",
+    alt: "Indian Spices Exporter",
     category: "spices",
     image: "/products/close-up-chilli-powder.jpg",
     description:
@@ -162,6 +174,7 @@ export const PRODUCTS = [
   {
     slug: "turmeric-powder",
     name: "Pure Turmeric Powder",
+    alt: "Indian Spices Exporter",
     category: "spices",
     image: "/products/close-up-turmeric-powder.jpg",
     description:

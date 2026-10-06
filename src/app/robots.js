@@ -1,13 +1,25 @@
 export default function robots() {
+  const baseUrl = "https://www.mitrayexim.com";
+
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/landing", "/api/"],
+        disallow: ["/api/", "/_next/static/media/", "/landing"],
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/api/"],
       },
     ],
-    sitemap: "https://www.mitrayexim.com/sitemap.xml",
-    host: "https://www.mitrayexim.com",
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

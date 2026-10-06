@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/shared/Button";
 import { HeroAds } from "./sections/HeroAds";
@@ -9,6 +10,10 @@ export const metadata = {
     title: "Import Fresh Vegetables from India – Lead Form",
     description:
         "Request quotation for fresh vegetables, fruits, spices, rice, and wheat exported from India to international markets.",
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
 
 export default function LandingPage() {
@@ -31,18 +36,18 @@ export default function LandingPage() {
                         </h2>
                         <div className="flex flex-col sm:flex-row justify-center gap-4 items-center mb-6">
                             <a
-                                href="https://wa.me/91XXXXXXXXXX"
+                                href="https://wa.me/917778886559"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center px-6 py-3 bg-green-500 rounded-lg font-semibold text-white hover:bg-green-600 transition-colors"
                             >
                                 WhatsApp Us
                             </a>
-                            <a href="/products">
+                            <Link href="/products">
                                 <Button variant="secondary" className="px-8 py-3">
                                     View Products
                                 </Button>
-                            </a>
+                            </Link>
                         </div>
                         <p className="text-slate-300 max-w-2xl mx-auto">
                             We are ready to assist you with quotations, product catalogues, and export compliance for your business.

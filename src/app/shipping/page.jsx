@@ -319,6 +319,7 @@ function InquiryModal({ onClose }) {
         <div className={clsx('relative', 'bg-white', 'rounded-t-3xl', 'sm:rounded-none', 'border-2', 'border-slate-100', 'p-5', 'sm:p-8', 'md:p-10', 'lg:p-12', 'shadow-2xl')}>
           <button
             onClick={onClose}
+            aria-label="Close specification inquiry modal"
             className={clsx('absolute', 'top-4', 'sm:top-6', 'right-4', 'sm:right-6', 'w-9', 'sm:w-10', 'h-9', 'sm:h-10', 'bg-slate-50', 'hover:bg-slate-100', 'border', 'border-slate-200', 'flex', 'items-center', 'justify-center', 'transition-colors', 'text-brand-navy')}
           >
             <svg className={clsx('w-4.5', 'sm:w-5', 'h-4.5', 'sm:h-5')} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -342,11 +343,12 @@ function InquiryModal({ onClose }) {
           <form onSubmit={handleSubmit} className={clsx('space-y-4', 'sm:space-y-5', 'md:space-y-6')}>
             <div className={clsx('grid', 'grid-cols-1', 'sm:grid-cols-2', 'gap-3', 'sm:gap-4', 'md:gap-5')}>
               <div>
-                <label className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
+                <label htmlFor="modal-name" className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
                   Full Name *
                 </label>
                 <input
                   type="text"
+                  id="modal-name"
                   required
                   className={clsx('w-full', 'bg-[#F9FAFB]', 'border', 'border-slate-200', 'px-3', 'sm:px-4', 'py-2', 'sm:py-3', 'focus:border-brand-gold', 'focus:bg-white', 'outline-none', 'transition-all', 'text-xs', 'sm:text-sm', 'font-bold', 'uppercase', 'tracking-wider', 'text-brand-navy')}
                   placeholder="John Doe"
@@ -354,11 +356,12 @@ function InquiryModal({ onClose }) {
               </div>
 
               <div>
-                <label className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
+                <label htmlFor="modal-email" className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
                   Email Address *
                 </label>
                 <input
                   type="email"
+                  id="modal-email"
                   required
                   className={clsx('w-full', 'bg-[#F9FAFB]', 'border', 'border-slate-200', 'px-3', 'sm:px-4', 'py-2', 'sm:py-3', 'focus:border-brand-gold', 'focus:bg-white', 'outline-none', 'transition-all', 'text-xs', 'sm:text-sm', 'font-bold', 'tracking-wider', 'text-brand-navy')}
                   placeholder="john@example.com"
@@ -366,23 +369,25 @@ function InquiryModal({ onClose }) {
               </div>
 
               <div>
-                <label className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
+                <label htmlFor="modal-phone" className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
                   Phone Number *
                 </label>
                 <input
                   type="text"
+                  id="modal-phone"
                   required
                   className={clsx('w-full', 'bg-[#F9FAFB]', 'border', 'border-slate-200', 'px-3', 'sm:px-4', 'py-2', 'sm:py-3', 'focus:border-brand-gold', 'focus:bg-white', 'outline-none', 'transition-all', 'text-xs', 'sm:text-sm', 'font-bold', 'tracking-wider', 'text-brand-navy')}
-                  placeholder="+91 XXXXXXXXXX"
+                  placeholder="+91 7778886559"
                 />
               </div>
 
               <div>
-                <label className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
+                <label htmlFor="modal-company" className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
                   Company Name
                 </label>
                 <input
                   type="text"
+                  id="modal-company"
                   className={clsx('w-full', 'bg-[#F9FAFB]', 'border', 'border-slate-200', 'px-3', 'sm:px-4', 'py-2', 'sm:py-3', 'focus:border-brand-gold', 'focus:bg-white', 'outline-none', 'transition-all', 'text-xs', 'sm:text-sm', 'font-bold', 'uppercase', 'tracking-wider', 'text-brand-navy')}
                   placeholder="Your Company"
                 />
@@ -390,10 +395,11 @@ function InquiryModal({ onClose }) {
             </div>
 
             <div>
-              <label className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
+              <label htmlFor="modal-requirements" className={clsx('block', 'text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-widest', 'mb-1.5', 'sm:mb-2')}>
                 Commodity Requirements *
               </label>
               <textarea
+                id="modal-requirements"
                 rows={4}
                 required
                 className={clsx('w-full', 'bg-[#F9FAFB]', 'border', 'border-slate-200', 'px-3', 'sm:px-4', 'py-2', 'sm:py-3', 'focus:border-brand-gold', 'focus:bg-white', 'outline-none', 'transition-all', 'text-xs', 'sm:text-sm', 'font-bold', 'uppercase', 'tracking-wider', 'text-brand-navy', 'resize-none')}

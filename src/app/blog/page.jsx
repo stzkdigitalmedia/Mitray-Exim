@@ -6,7 +6,6 @@ import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { FiArrowRight, FiSearch, FiFilter, FiX, FiChevronDown } from "react-icons/fi";
 import Link from "next/link";
-import Head from "next/head";
 import { useState } from "react";
 import clsx from "clsx";
 
@@ -29,14 +28,6 @@ export default function BlogPage() {
 
   return (
     <div className="bg-white">
-      {/* HEAD */}
-      <Head>
-        <title>Technical Manifest Library – Mitray Exim</title>
-        <meta name="description" content="Access technical manifestos, market insights, and export logistics for the agricultural industry." />
-        <meta property="og:title" content="Technical Manifest Library – Mitray Exim" />
-        <meta property="og:description" content="Access technical manifestos, market insights, and export logistics for the agricultural industry." />
-      </Head>
-
       {/* HERO SECTION */}
       <PageHero 
         badge="MARKET INTELLIGENCE HUB"
@@ -77,6 +68,7 @@ export default function BlogPage() {
                   <input 
                     type="text" 
                     placeholder="Search articles..." 
+                    aria-label="Search export articles and guides"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className={clsx('w-full', 'pl-10', 'sm:pl-12', 'pr-4', 'sm:pr-6', 'py-3', 'sm:py-4', 'md:py-5', 'bg-white', 'border-2', 'border-slate-200', 'hover:border-brand-gold', 'focus:border-brand-gold', 'focus:ring-4', 'focus:ring-brand-gold/10', 'font-semibold', 'text-xs', 'sm:text-sm', 'md:text-base', 'uppercase', 'tracking-wide', 'transition-all', 'shadow-sm', 'text-brand-navy', 'placeholder:text-slate-400', 'outline-none')}
@@ -87,6 +79,7 @@ export default function BlogPage() {
                <div className="relative">
                   <button
                     onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
+                    aria-label="Filter export articles by category"
                     className={clsx('w-full', 'sm:w-auto', 'flex', 'items-center', 'justify-between', 'gap-2', 'sm:gap-3', 'px-4', 'sm:px-6', 'py-3', 'sm:py-4', 'md:py-5', 'bg-white', 'border-2', 'border-slate-200', 'hover:border-brand-gold', 'transition-all', 'text-xs', 'sm:text-sm', 'md:text-base', 'font-black', 'text-brand-navy', 'uppercase', 'tracking-wide', 'shadow-sm')}
                   >
                     <FiFilter className={clsx('w-4', 'sm:w-5', 'h-4', 'sm:h-5')} />
@@ -203,6 +196,7 @@ export default function BlogPage() {
                       <input
                         type="email"
                         placeholder="your@email.com"
+                        aria-label="Email address for intelligence feed subscription"
                         className={clsx('flex-1', 'px-4', 'sm:px-6', 'py-3', 'sm:py-4', 'bg-white', 'border-2', 'border-transparent', 'text-xs', 'sm:text-sm', 'md:text-base', 'font-semibold', 'text-brand-navy', 'outline-none', 'focus:border-brand-gold', 'transition-all', 'placeholder:text-slate-400')}
                       />
                       <button className={clsx('flex', 'items-center', 'justify-center', 'gap-2', 'px-4', 'sm:px-8', 'py-3', 'sm:py-4', 'bg-brand-gold', 'hover:bg-brand-gold/90', 'text-brand-navy', 'text-xs', 'sm:text-sm', 'md:text-base', 'font-black', 'uppercase', 'tracking-wider', 'transition-all', 'shadow-lg', 'whitespace-nowrap')}>

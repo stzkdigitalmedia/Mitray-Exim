@@ -28,10 +28,10 @@ export function CompanyIntro() {
                      </h2>
                      <div className={clsx('space-y-6', 'md:space-y-8', 'animate-reveal', 'delay-300', 'opacity-0')}>
                         <p className={clsx('text-sm', 'sm:text-base', 'md:text-lg', 'lg:text-xl', 'text-slate-500', 'font-bold', 'uppercase', 'tracking-tight', 'leading-relaxed', 'max-w-3xl')}>
-                           MITRAY EXIM stands as a premier merchant exporter from India, specializing in the reliable delivery of nature's finest agricultural treasures—including premium vegetables, fresh fruits, and high-grade spices—to international markets.
+                           Mitray is a premier export company in Gujarat and trusted merchant exporter in India, specializing in the international delivery of premium fresh fruits, authentic Indian spices, fresh vegetables, and certified agricultural products.
                         </p>
                         <p className={clsx('text-xs', 'sm:text-sm', 'md:text-base', 'lg:text-lg', 'text-slate-400', 'font-medium', 'uppercase', 'tracking-tight', 'leading-relaxed', 'max-w-3xl', 'opacity-70')}>
-                           Our business is built on quality, strict compliance, and complete supply chain reliability. We bridge the gap between India's most fertile agricultural regions and the sophisticated demand of global trade hubs in the Gulf, Europe, and North America.
+                           As an established food exporter and exporter in India, our operations are rooted in stringent APEDA and FSSAI standards, cold chain excellence, and port-side dispatch via Mundra and Kandla ports, bridging India's fertile agrarian basins to the UAE, Saudi Arabia, Europe, the UK, and North America.
                         </p>
                      </div>
 

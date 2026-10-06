@@ -66,7 +66,7 @@ export default function ProductDetailPage({ params }) {
                         <div className="relative glass-card p-2 rounded-2xl md:rounded-[2.5rem] bg-slate-100 shadow-2xl border-white overflow-hidden h-[300px] sm:h-[400px] md:h-[550px]">
                            <Image
                               src={productImage}
-                              alt={product.name}
+                              alt={product.alt || `${product.name} - Exporter in India`}
                               fill
                               sizes="(max-width: 768px) 100vw, 50vw"
                               className="object-cover rounded-xl md:rounded-[2rem] transition-all duration-[2000ms] group-hover:scale-105"
@@ -194,7 +194,7 @@ export default function ProductDetailPage({ params }) {
                            <Link key={rel.slug} href={`/products/${rel.slug}`} className="group/rel animate-reveal opacity-0" style={{ animationDelay: `${idx * 150}ms` }}>
                               <div className="glass-card bg-white rounded-2xl md:rounded-[2.5rem] overflow-hidden border-slate-100 shadow-sm hover:border-brand-gold hover:shadow-2xl transition-all duration-700 hover-lift h-full flex flex-col">
                                  <div className="relative aspect-[1/1] md:aspect-[4/5] overflow-hidden bg-slate-50">
-                                    <Image src={getHighResImage(rel)} alt={rel.name} fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw" className="object-cover transition-all duration-1000 group-hover/rel:scale-110" />
+                                    <Image src={getHighResImage(rel)} alt={rel.alt || `${rel.name} - Exporter in India`} fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw" className="object-cover transition-all duration-1000 group-hover/rel:scale-110" />
                                  </div>
                                  <div className="p-3 md:p-6 lg:p-8">
                                     <h4 className="text-[10px] sm:text-xs md:text-xl font-black text-brand-navy uppercase tracking-tighter mb-1.5 md:mb-2 group-hover/rel:text-brand-gold transition-colors line-clamp-2">{rel.name}</h4>

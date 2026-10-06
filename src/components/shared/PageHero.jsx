@@ -4,6 +4,7 @@ import { Container } from "./Container";
 import { FiChevronRight, FiShield, FiGlobe, FiZap } from "react-icons/fi";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 
 export function PageHero({
   badge,
@@ -42,21 +43,26 @@ export function PageHero({
       <Container className={clsx('relative', 'z-10')}>
         <div className={clsx('max-w-5xl')}>
 
-          {/* MINIMAL BREADCRUMBS */}
-          <div className={clsx('flex', 'items-center', 'gap-3', 'mb-8', 'md:mb-12', 'animate-reveal', 'opacity-0')}>
+          {/* MINIMAL BREADCRUMBS WITH SEMANTIC NAV */}
+          <nav aria-label="Breadcrumb" className={clsx('flex', 'items-center', 'gap-3', 'mb-8', 'md:mb-12', 'animate-reveal', 'opacity-0')}>
             {breadcrumbs.map((crumb, idx) => (
               <div key={idx} className={clsx('flex', 'items-center', 'gap-3', 'group')}>
                 {idx > 0 && <FiChevronRight className={clsx('text-white/20', 'text-sm')} />}
-                <a
-                  href={crumb.href || "#"}
-                  className={`text-[10px] md:text-[11px] font-black uppercase tracking-[0.3em] transition-all ${crumb.href ? 'text-white/40 hover:text-brand-gold' : 'text-brand-gold'
-                    }`}
-                >
-                  {crumb.label}
-                </a>
+                {crumb.href ? (
+                  <Link
+                    href={crumb.href}
+                    className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.3em] transition-all text-white/40 hover:text-brand-gold"
+                  >
+                    {crumb.label}
+                  </Link>
+                ) : (
+                  <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.3em] text-brand-gold">
+                    {crumb.label}
+                  </span>
+                )}
               </div>
             ))}
-          </div>
+          </nav>
 
           {/* CONTENT BLOCK */}
           <div className={clsx('space-y-6', 'md:space-y-8')}>

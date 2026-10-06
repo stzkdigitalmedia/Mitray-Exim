@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Badge } from "@/components/shared/Badge";
 import { Button } from "@/components/shared/Button";
 
@@ -53,11 +54,12 @@ export function ProductDetails({ product }) {
         </div>
       </div>
 
-      <a href="/landing" className="block">
-        <button className="w-full px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg bg-brand-gold text-white rounded-xl font-semibold hover:bg-brand-gold-light transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-          Request Quotation for {product.name}
-        </button>
-      </a>
+      <Link
+        href="/contact"
+        className="block text-center w-full px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg bg-brand-gold text-brand-navy rounded-xl font-bold hover:bg-brand-gold-light transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+      >
+        Request Quotation for {product.name}
+      </Link>
     </div>
   );
 }

@@ -103,10 +103,10 @@ export function Reviews() {
           </Swiper>
 
           <div className={clsx('absolute', 'bottom-5', 'left-6', 'sm:left-8', 'md:bottom-auto', 'md:top-1/2', 'md:-translate-y-1/2', 'md:left-0', 'md:right-0', 'z-20', 'flex', 'gap-4', 'md:gap-0', 'md:justify-between', 'pointer-events-none')}>
-            <button className={clsx('rev-prev', 'w-10', 'h-10', 'md:w-16', 'md:h-16', 'rounded-xl', 'bg-white', 'shadow-xl', 'border', 'border-slate-100', 'flex', 'items-center', 'justify-center', 'text-brand-navy', 'hover:bg-brand-navy', 'hover:text-white', 'transition-all', 'duration-700', 'pointer-events-auto', 'md:-translate-x-6', 'group-hover:translate-x-0')}>
+            <button aria-label="Previous client testimonial" className={clsx('rev-prev', 'w-10', 'h-10', 'md:w-16', 'md:h-16', 'rounded-xl', 'bg-white', 'shadow-xl', 'border', 'border-slate-100', 'flex', 'items-center', 'justify-center', 'text-brand-navy', 'hover:bg-brand-navy', 'hover:text-white', 'transition-all', 'duration-700', 'pointer-events-auto', 'md:-translate-x-6', 'group-hover:translate-x-0')}>
               <FiArrowLeft className={clsx('text-lg', 'md:text-xl')} />
             </button>
-            <button className={clsx('rev-next', 'w-10', 'h-10', 'md:w-16', 'md:h-16', 'rounded-xl', 'bg-white', 'shadow-xl', 'border', 'border-slate-100', 'flex', 'items-center', 'justify-center', 'text-brand-navy', 'hover:bg-brand-navy', 'hover:text-white', 'transition-all', 'duration-700', 'pointer-events-auto', 'md:translate-x-6', 'group-hover:translate-x-0')}>
+            <button aria-label="Next client testimonial" className={clsx('rev-next', 'w-10', 'h-10', 'md:w-16', 'md:h-16', 'rounded-xl', 'bg-white', 'shadow-xl', 'border', 'border-slate-100', 'flex', 'items-center', 'justify-center', 'text-brand-navy', 'hover:bg-brand-navy', 'hover:text-white', 'transition-all', 'duration-700', 'pointer-events-auto', 'md:translate-x-6', 'group-hover:translate-x-0')}>
               <FiArrowRight className={clsx('text-lg', 'md:text-xl')} />
             </button>
           </div>

@@ -1,6 +1,7 @@
 "use client";
  
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { FiShield, FiFileText, FiGlobe, FiEye, FiLock, FiCheckCircle, FiChevronRight } from "react-icons/fi";
@@ -106,9 +107,9 @@ export default function PrivacyPolicyPage() {
                  <p className="text-[11px] font-bold text-white/40 uppercase tracking-widest leading-relaxed mb-6">
                    Our legal compliance officer desk is active 24/7 for security queries.
                  </p>
-                 <a href="/contact" className="inline-flex items-center gap-3 text-[10px] font-black text-brand-gold uppercase tracking-[0.2em] group-hover:gap-5 transition-all">
+                 <Link href="/contact" className="inline-flex items-center gap-3 text-[10px] font-black text-brand-gold uppercase tracking-[0.2em] group-hover:gap-5 transition-all">
                    Contact Compliance <FiChevronRight />
-                 </a>
+                 </Link>
               </div>
             </div>
  

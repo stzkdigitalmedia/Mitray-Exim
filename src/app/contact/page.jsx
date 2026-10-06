@@ -209,6 +209,7 @@ export default function ContactPage() {
                               key={i}
                               href={item.link}
                               target={item.link.startsWith('http') ? '_blank' : undefined}
+                              rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                               className={clsx('group', 'relative', 'overflow-hidden', 'transition-all', 'duration-500', 'hover:-translate-y-1')}
                            >
                               <div className={`absolute inset-0 ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -321,7 +322,7 @@ export default function ContactPage() {
                               <div className={clsx('grid', 'grid-cols-1', 'sm:grid-cols-2', 'gap-3', 'sm:gap-4', 'md:gap-5', 'lg:gap-6')}>
                                  {/* Name Field */}
                                  <div className={clsx('space-y-1.5', 'sm:space-y-2')}>
-                                    <label className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
+                                    <label htmlFor="contact-name" className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
                                        <span className={clsx('w-1', 'h-1', 'sm:w-1.5', 'sm:h-1.5', 'rounded-full', 'bg-brand-gold')}></span>
                                        Full Name
                                     </label>
@@ -329,6 +330,7 @@ export default function ContactPage() {
                                        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-gold/15', 'to-transparent', 'opacity-0', 'group-focus-within/input:opacity-100', 'transition-opacity', 'duration-300', 'rounded-lg', 'sm:rounded-xl')}></div>
                                        <input
                                           type="text"
+                                          id="contact-name"
                                           name="name"
                                           value={formData.name}
                                           onChange={handleChange}
@@ -345,7 +347,7 @@ export default function ContactPage() {
 
                                  {/* Email Field */}
                                  <div className={clsx('space-y-1.5', 'sm:space-y-2')}>
-                                    <label className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
+                                    <label htmlFor="contact-email" className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
                                        <span className={clsx('w-1', 'h-1', 'sm:w-1.5', 'sm:h-1.5', 'rounded-full', 'bg-brand-gold')}></span>
                                        Email Address
                                     </label>
@@ -353,6 +355,7 @@ export default function ContactPage() {
                                        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-gold/15', 'to-transparent', 'opacity-0', 'group-focus-within/input:opacity-100', 'transition-opacity', 'duration-300', 'rounded-lg', 'sm:rounded-xl')}></div>
                                        <input
                                           type="email"
+                                          id="contact-email"
                                           name="email"
                                           value={formData.email}
                                           onChange={handleChange}
@@ -372,7 +375,7 @@ export default function ContactPage() {
                               <div className={clsx('grid', 'grid-cols-1', 'sm:grid-cols-2', 'gap-3', 'sm:gap-4', 'md:gap-5', 'lg:gap-6')}>
                                  {/* Phone Field */}
                                  <div className={clsx('space-y-1.5', 'sm:space-y-2')}>
-                                    <label className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
+                                    <label htmlFor="contact-phone" className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
                                        <span className={clsx('w-1', 'h-1', 'sm:w-1.5', 'sm:h-1.5', 'rounded-full', 'bg-brand-gold')}></span>
                                        Phone Number
                                     </label>
@@ -380,6 +383,7 @@ export default function ContactPage() {
                                        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-gold/15', 'to-transparent', 'opacity-0', 'group-focus-within/input:opacity-100', 'transition-opacity', 'duration-300', 'rounded-lg', 'sm:rounded-xl')}></div>
                                        <input
                                           type="tel"
+                                          id="contact-phone"
                                           name="phone"
                                           value={formData.phone}
                                           onChange={handleChange}
@@ -396,7 +400,7 @@ export default function ContactPage() {
 
                                  {/* Company Field */}
                                  <div className={clsx('space-y-1.5', 'sm:space-y-2')}>
-                                    <label className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
+                                    <label htmlFor="contact-company" className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
                                        <span className={clsx('w-1', 'h-1', 'sm:w-1.5', 'sm:h-1.5', 'rounded-full', 'bg-brand-gold')}></span>
                                        Company Name
                                     </label>
@@ -404,6 +408,7 @@ export default function ContactPage() {
                                        <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-gold/15', 'to-transparent', 'opacity-0', 'group-focus-within/input:opacity-100', 'transition-opacity', 'duration-300', 'rounded-lg', 'sm:rounded-xl')}></div>
                                        <input
                                           type="text"
+                                          id="contact-company"
                                           name="company"
                                           value={formData.company}
                                           onChange={handleChange}
@@ -421,14 +426,15 @@ export default function ContactPage() {
 
                               {/* Message Textarea */}
                               <div className={clsx('space-y-1.5', 'sm:space-y-2', 'pt-1', 'sm:pt-2', 'md:pt-3')}>
-                                 <label className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
+                                 <label htmlFor="contact-message" className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-xs', 'lg:text-sm', 'font-black', 'text-slate-700', 'uppercase', 'tracking-wider', 'flex', 'items-center', 'gap-1.5')}>
                                     <span className={clsx('w-1', 'h-1', 'sm:w-1.5', 'sm:h-1.5', 'rounded-full', 'bg-brand-gold')}></span>
                                     Your Message
                                  </label>
                                  <div className={clsx('relative', 'group/input')}>
                                     <div className={clsx('absolute', 'inset-0', 'bg-gradient-to-r', 'from-brand-gold/15', 'to-transparent', 'opacity-0', 'group-focus-within/input:opacity-100', 'transition-opacity', 'duration-300', 'rounded-lg', 'sm:rounded-xl')}></div>
                                     <textarea
-                                       name="message"
+                                       id="contact-message"
+                                        name="message"
                                        value={formData.message}
                                        onChange={handleChange}
                                        onFocus={() => setFocusedField('message')}
@@ -513,6 +519,7 @@ export default function ContactPage() {
                         <div className={clsx('relative', 'p-1', 'sm:p-2', 'md:p-3', 'rounded-lg', 'sm:rounded-2xl', 'md:rounded-3xl', 'bg-white', 'shadow-2xl', 'overflow-hidden', 'aspect-video', 'md:aspect-square', 'border-2', 'border-slate-200', 'hover:border-brand-gold/50', 'transition-all', 'duration-500')}>
                            <iframe
                               src="https://maps.google.com/maps?q=PLOT+NO+57,+GROUND+FLOOR+R.S.+NO+21+MAIN+ROAD+ROAD,+LAKHABAVAL+JAMNAGAR,+GUJRAT+361006&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                               title="Google Maps Location - Mitray Headquarters Jamnagar Gujarat"
                               className={clsx('w-full', 'h-full', 'rounded-lg', 'sm:rounded-2xl', 'md:rounded-2xl')}
                               loading="lazy"
                            ></iframe>

@@ -54,12 +54,14 @@ export function InquiryForm() {
                 { id: 'phone', label: 'Phone Number', icon: <FiPhone />, placeholder: 'E.g. +91 7778886559', type: 'text' },
               ].map((field, idx) => (
                 <div key={field.id} className="space-y-2 animate-reveal" style={{ animationDelay: `${700 + (idx * 100)}ms` }}>
-                  <label className="flex items-center gap-2 text-[10px] font-black text-brand-navy uppercase tracking-[0.2em] opacity-50 ml-4">
+                  <label htmlFor={`inquiry-${field.id}`} className="flex items-center gap-2 text-[10px] font-black text-brand-navy uppercase tracking-[0.2em] opacity-50 ml-4">
                     {field.icon} {field.label}
                   </label>
                   <div className="relative group">
                     <div className="absolute -inset-1 bg-brand-gold/15 rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition duration-700"></div>
                     <input
+                      id={`inquiry-${field.id}`}
+                      name={`inquiry-${field.id}`}
                       type={field.type}
                       required
                       className="relative w-full bg-white/60 backdrop-blur-xl border border-white rounded-xl px-6 py-4 focus:bg-white focus:shadow-2xl outline-none transition-all duration-700 text-brand-navy font-bold placeholder:text-slate-300 text-sm"
@@ -71,12 +73,14 @@ export function InquiryForm() {
             </div>
 
             <div className="space-y-2 animate-reveal delay-1000">
-              <label className="flex items-center gap-2 text-[10px] font-black text-brand-navy uppercase tracking-[0.2em] opacity-50 ml-4">
+              <label htmlFor="inquiry-requirements" className="flex items-center gap-2 text-[10px] font-black text-brand-navy uppercase tracking-[0.2em] opacity-50 ml-4">
                 <FiMessageSquare /> YOUR INQUIRY & PACKAGING REQUIREMENTS
               </label>
               <div className="relative group">
                 <div className="absolute -inset-1 bg-brand-gold/15 rounded-2xl opacity-0 group-hover:opacity-100 blur-2xl transition duration-700"></div>
                 <textarea
+                  id="inquiry-requirements"
+                  name="inquiry-requirements"
                   rows={4}
                   required
                   className="relative w-full bg-white/60 backdrop-blur-xl border border-white rounded-2xl px-8 py-5 focus:bg-white focus:shadow-2xl outline-none transition-all duration-700 text-brand-navy font-bold placeholder:text-slate-300 resize-none text-sm"

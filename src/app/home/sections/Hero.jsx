@@ -14,7 +14,7 @@ export function Hero() {
       <div className={clsx('absolute', 'inset-0', 'z-0')}>
         <Image 
           src="/homeHero.jpg" 
-          alt="MITRAY EXIM Premium Agricultural Exports India" 
+          alt="Mitray - Leading Export Company in India | Fruits, Spices & Agricultural Products Exporter" 
           fill
           priority={true}
           quality={60}
@@ -36,34 +36,35 @@ export function Hero() {
             {/* BRAND MICRO-INDICATOR */}
             <div className={clsx('inline-flex', 'items-center', 'gap-2', 'md:gap-3', 'px-3', 'md:px-5', 'py-1', 'md:py-2', 'bg-brand-gold/10', 'rounded-xl', 'mb-6', 'md:mb-8', 'animate-reveal-right', 'border', 'border-brand-gold/20', 'backdrop-blur-md')}>
               <div className={clsx('w-1.5', 'h-1.5', 'md:w-2', 'md:h-2', 'rounded-full', 'bg-brand-gold', 'animate-ping')}></div>
-              <span className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-[10px]', 'font-black', 'text-brand-gold', 'uppercase', 'tracking-[0.4em]', 'md:tracking-[0.5em]')}>MITRAY EXIM • INDIA'S PREMIER EXPORT NETWORK</span>
+              <span className={clsx('text-[8px]', 'sm:text-[9px]', 'md:text-[10px]', 'font-black', 'text-brand-gold', 'uppercase', 'tracking-[0.4em]', 'md:tracking-[0.5em]')}>MITRAY • EXPORT COMPANY IN GUJARAT • PREMIER EXPORTER IN INDIA</span>
             </div>
 
             {/* INTEGRATED BRAND HEADLINE */}
-            <h1 className={clsx('text-4xl', 'sm:text-5xl', 'md:text-6xl', 'lg:text-6xl', 'xl:text-[5.5rem]', '2xl:text-7xl', 'font-black', 'text-white', 'mb-4', 'md:mb-6', 'tracking-tight', 'leading-[1]', 'md:leading-[0.95]', 'min-h-[160px]', 'sm:min-h-[180px]', 'md:min-h-[200px]', 'xl:min-h-[240px]')}>
-              <span className={clsx('block', 'animate-reveal', 'opacity-0')}>MITRAY <span className="text-gradient">EXIM.</span></span>
-              <div className={clsx('block', 'animate-reveal', 'delay-500', 'opacity-0', 'text-white/40', 'uppercase', 'mt-2')}>
+            <h1 className={clsx('text-4xl', 'sm:text-5xl', 'md:text-6xl', 'lg:text-6xl', 'xl:text-7xl', '2xl:text-8xl', 'font-black', 'text-white', 'mb-4', 'md:mb-6', 'tracking-tight', 'leading-[1.05]')}>
+              <span className={clsx('block', 'animate-reveal', 'opacity-0')}>Leading Export Company</span>
+              <span className={clsx('block', 'text-gradient', 'animate-reveal', 'delay-200', 'opacity-0')}>in India</span>
+              <div className={clsx('block', 'animate-reveal', 'delay-500', 'opacity-0', 'text-white/40', 'uppercase', 'text-base', 'sm:text-xl', 'md:text-2xl', 'mt-3', 'tracking-widest')}>
                 <TypeAnimation
                   sequence={[
-                    'Bridging india to the World.',
+                    'FRUITS EXPORTER & SPICES SUPPLIER',
                     2500,
-                    'GLOBAL EXCELLENCE.',
+                    'AGRICULTURE PRODUCTS EXPORTER',
                     2500,
-                    'PREMIUM QUALITY.',
+                    'MERCHANT EXPORT COMPANY GUJARAT',
                     2500,
-                    'WORLDWIDE EXPORT.',
+                    'WORLDWIDE B2B EXPORT NETWORK',
                     2500,
                   ]}
                   wrapper="span"
                   speed={20}
-                  repeat={0}
+                  repeat={Infinity}
                   className="inline-block"
                 />
               </div>
             </h1>
 
-            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'xl:text-2xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'animate-reveal', 'delay-300', 'opacity-0', 'uppercase', 'tracking-tight')}>
-              India's leading merchant exporter delivering <span className={clsx('text-white', 'font-black', 'decoration-brand-gold', 'decoration-2', 'underline', 'underline-offset-4', 'md:underline-offset-8')}>Fresh Vegetables</span>, Fruits, and Spices to strategic global markets.
+            <p className={clsx('text-xs', 'sm:text-sm', 'md:text-lg', 'lg:text-xl', 'text-slate-300', 'font-medium', 'max-w-4xl', 'mb-6', 'md:mb-10', 'leading-relaxed', 'animate-reveal', 'delay-300', 'opacity-0', 'uppercase', 'tracking-tight')}>
+              Mitray is a trusted merchant exporter and export company in Gujarat, India. We deliver premium <span className={clsx('text-white', 'font-black', 'decoration-brand-gold', 'decoration-2', 'underline', 'underline-offset-4', 'md:underline-offset-8')}>Fresh Fruits</span>, authentic Indian Spices, fresh Vegetables, and certified Agricultural Products to international importers worldwide.
             </p>
 
             <div className={clsx('flex', 'flex-col', 'sm:flex-row', 'items-stretch', 'justify-center', 'sm:justify-start', 'gap-4', 'md:gap-6')}>

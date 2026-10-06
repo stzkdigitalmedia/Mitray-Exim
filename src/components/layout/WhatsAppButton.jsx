@@ -13,6 +13,7 @@ export function WhatsAppButton() {
         href="https://wa.me/qr/2BFZ6ZDAMN2BC1"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contact Mitray on WhatsApp for Export Inquiries"
         className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:bg-[#20ba5a] hover:scale-110 active:scale-95 transition-all duration-300"
       >
         <svg

@@ -88,6 +88,7 @@ export default function ProductsPage() {
                               <input
                                  type="text"
                                  placeholder="Type to search products..."
+                                 aria-label="Search agricultural export products"
                                  value={searchQuery}
                                  onChange={(e) => { setSearchQuery(e.target.value); setVisibleCount(ITEMS_PER_PAGE); }}
                                  className={clsx('w-full', 'bg-transparent', 'border-none', 'pl-12', 'py-1', 'text-xl', 'font-black', 'text-brand-navy', 'placeholder:text-slate-400', 'outline-none', 'transition-all', 'tracking-tighter')}
@@ -164,6 +165,7 @@ export default function ProductsPage() {
                               <input
                                  type="text"
                                  placeholder="Type to search products..."
+                                 aria-label="Search agricultural export products"
                                  value={searchQuery}
                                  onChange={(e) => { setSearchQuery(e.target.value); setVisibleCount(ITEMS_PER_PAGE); }}
                                  className={clsx('w-full', 'bg-transparent', 'border-none', 'pl-8', 'md:pl-10', 'py-1', 'text-lg', 'md:text-xl', 'font-black', 'text-brand-navy', 'placeholder:text-slate-400', 'outline-none', 'transition-all', 'tracking-tighter')}
@@ -283,7 +285,7 @@ export default function ProductsPage() {
                                  <div className={clsx('relative', 'aspect-[4/5]', 'overflow-hidden', 'bg-slate-200', 'animate-pulse')}>
                                     <Image
                                        src={product.image?.replace('/upload/', '/upload/f_auto,q_auto,w_400/')}
-                                       alt={product.name}
+                                       alt={product.alt || `${product.name} - Exporter in India`}
                                        fill
                                        unoptimized={true}
                                        priority={true}

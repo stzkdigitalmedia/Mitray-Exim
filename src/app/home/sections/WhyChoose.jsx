@@ -36,15 +36,15 @@ export function WhyChoose() {
         <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16">
            <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-px bg-brand-gold animate-line-grow w-0"></div>
-              <span className="text-[10px] font-black text-brand-gold uppercase tracking-[0.5em] animate-reveal opacity-0">Leading  Exporters</span>
+              <span className="text-[10px] font-black text-brand-gold uppercase tracking-[0.5em] animate-reveal opacity-0">Global Agricultural Trade</span>
               <div className="h-px bg-brand-gold animate-line-grow w-0"></div>
            </div>
-           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-brand-navy mb-6 tracking-tighter leading-[0.85] animate-reveal opacity-0">
-              TRUSTED EXPORT <br />
-              <span className="text-gradient">PARTNER.</span>
+           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-brand-navy mb-6 tracking-tighter leading-tight animate-reveal opacity-0">
+              Agricultural Products <br />
+              <span className="text-gradient">Exporter Worldwide</span>
            </h2>
-           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-tight opacity-0 animate-reveal delay-300">
-              MITRAY EXIM bridges the gap between India's rich agricultural heritage and the global demand for premium quality produce.
+           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed uppercase tracking-tight opacity-0 animate-reveal delay-300">
+              As a premier agriculture products exporter and merchant exporter in India, Mitray connects international importers to India's most fertile agricultural belts with certified cold-chain logistics and rigorous quality control.
            </p>
         </div>
 

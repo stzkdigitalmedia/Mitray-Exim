@@ -149,9 +149,9 @@ export function ExportCountries() {
             </div>
 
             <div className="flex flex-col gap-2 pointer-events-auto">
-              <button onClick={handleZoomIn} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-gold hover:text-brand-navy transition-all shadow-lg active:scale-90 bg-white/80"><FiPlus /></button>
-              <button onClick={handleZoomOut} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-lg active:scale-90 bg-white/80"><FiMinus /></button>
-              <button onClick={handleResetMap} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-lg active:scale-90 bg-white/80"><FiTarget /></button>
+              <button aria-label="Zoom in global export destinations map" onClick={handleZoomIn} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-gold hover:text-brand-navy transition-all shadow-lg active:scale-90 bg-white/80"><FiPlus /></button>
+              <button aria-label="Zoom out global export destinations map" onClick={handleZoomOut} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-lg active:scale-90 bg-white/80"><FiMinus /></button>
+              <button aria-label="Reset global export destinations map view" onClick={handleResetMap} className="w-10 h-10 glass-panel rounded-xl flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-all shadow-lg active:scale-90 bg-white/80"><FiTarget /></button>
             </div>
           </div>
 
@@ -219,14 +219,14 @@ export function ExportCountries() {
             <div className={`absolute bottom-0 left-0 right-0 z-30 transition-transform duration-700 ${isStatsOpen ? 'translate-y-0' : 'translate-y-[calc(100%-60px)]'}`}>
               <div className="glass-panel p-6 md:p-8 rounded-t-2xl md:rounded-t-[2rem] border-t-white shadow-[0_-20px_60px_-15px_rgba(44,74,94,0.15)] bg-white/95 backdrop-blur-2xl">
 
-                <button onClick={() => setIsStatsOpen(!isStatsOpen)} className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg border border-slate-100 md:hidden">
+                <button aria-label={isStatsOpen ? "Collapse trade partner metrics drawer" : "Expand trade partner metrics drawer"} onClick={() => setIsStatsOpen(!isStatsOpen)} className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg border border-slate-100 md:hidden">
                   <FiChevronUp className={`transition-transform duration-500 ${isStatsOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
                   <div className="flex items-center gap-6 w-full">
                     <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full border-2 border-slate-100 shadow-md overflow-hidden animate-reveal">
-                       <img src={`https://hatscripts.github.io/circle-flags/flags/${EXPORT_COUNTRIES.find(c => c.name === hovered)?.code}.svg`} alt="Flag" className="w-full h-full object-cover" />
+                       <img src={`https://hatscripts.github.io/circle-flags/flags/${EXPORT_COUNTRIES.find(c => c.name === hovered)?.code}.svg`} alt={`${hovered || "Destination"} Flag - Mitray Export Network`} className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1">
                       <p className="text-[8px] md:text-[10px] font-black text-brand-gold uppercase tracking-[0.3em] mb-1">Global Trade Partner</p>
